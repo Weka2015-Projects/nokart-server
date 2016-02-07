@@ -1,2 +1,4 @@
+const app = require('./app.js')
+const port = process.env.PORT || 8081
 
-console.log('hello world')
+app.listen(port, () => console.log('Listening on ' + port))
