@@ -2,6 +2,7 @@ const koa = require('koa')
 const body = require('koa-bodyparser')
 const knex = require('koa-knex')
 const Router = require('koa-router')
+const cors = require('koa-cors')
 const app = koa()
 const storeRouter = new Router()
 // const dotenv = require('dotenv')
@@ -24,6 +25,13 @@ storeRouter.get('/products', function *() {
   this.body = res.rows
   this.status = 200
 })
+
+const options = {
+    origin: '*',
+    methods: ['GET', 'POST', 'PATCH']
+}
+
+app.use(cors(options))
 
 app.use(storeRouter.middleware())
 
