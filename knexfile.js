@@ -1,5 +1,5 @@
-const dotenv = require('dotenv')
-dotenv.load()
+// const dotenv = require('dotenv')
+// dotenv.load()
 // Update with your config settings.
 
 module.exports =  {

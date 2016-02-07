@@ -4,8 +4,8 @@ const knex = require('koa-knex')
 const Router = require('koa-router')
 const app = koa()
 const storeRouter = new Router()
-const dotenv = require('dotenv')
-dotenv.load()
+// const dotenv = require('dotenv')
+// dotenv.load()
 
 app.use(body())
 
