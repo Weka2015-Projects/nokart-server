@@ -4,19 +4,19 @@
 
 module.exports =  {
 
-  development: {
+  production: {
     client: 'pg',
     connection: {
       database: process.env.DBNAME,
       user:     process.env.DBUSER,
-      password: process.env.DBPASSWORD,
+      password: process.env.DBPASSWORD
     },
     pool: {
       min: 2,
-      max: 10,
+      max: 10
     },
     migrations: {
-      tableName: 'knex_migrations',
-    },
+      tableName: 'knex_migrations'
+    }
   }
 }
