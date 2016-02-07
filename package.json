@@ -1,0 +1,23 @@
+{
+  "name": "nokart-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "5.2.0",
+    "npm": "2.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Weka2015-Projects/nokart-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Weka2015-Projects/nokart-server/issues"
+  },
+  "homepage": "https://github.com/Weka2015-Projects/nokart-server#readme"
+}
