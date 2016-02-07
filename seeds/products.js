@@ -3,15 +3,21 @@ exports.seed = function(knex, Promise) {
     knex('products').del(),
     knex('products').insert({
         name: 'Not Aaron',
-        price: 1000
+        price: 1000,
+        created_at: new Date(),
+        updated_at: new Date()
       }),
     knex('products').insert({
         name: 'Half of Aaron',
-        price: 5
+        price: 5,
+        created_at: new Date(),
+        updated_at: new Date()
       }),
     knex('products').insert({
         name: 'Aaron',
-        price: 20
+        price: 20,
+        created_at: new Date(),
+        updated_at: new Date()
     })
    )
 }
